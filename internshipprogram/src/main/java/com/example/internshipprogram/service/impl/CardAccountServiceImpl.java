@@ -16,7 +16,7 @@ import java.util.Optional;
 
 @Service
 @AllArgsConstructor
-public class CardAccountImpl implements CardAccountService {
+public class CardAccountServiceImpl implements CardAccountService {
     private final CardAccountRepository cardAccountRepository;
     private final AccountRepository accountRepository;
     private final CardRepository cardRepository;

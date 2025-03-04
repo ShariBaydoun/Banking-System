@@ -44,7 +44,7 @@ public class CardServiceImpl implements CardService {
             card.setStatus(INACTIVE);
             cardRepository.save(card);
         } else {
-            throw new RuntimeException("Your card is already active!");
+            throw new RuntimeException("Your card is already inactive!");
         }
     }
 

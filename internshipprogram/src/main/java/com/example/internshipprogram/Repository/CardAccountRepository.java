@@ -10,4 +10,7 @@ import java.util.UUID;
 @Repository
 public interface CardAccountRepository extends JpaRepository<CardAccount, UUID> {
     List<CardAccount> findByCardId(UUID cardId);
+    List<CardAccount> findByCard_CardNumber(String cardNumber);
+
+
 }

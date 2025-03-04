@@ -9,6 +9,7 @@ import com.example.internshipprogram.DTO.AccountRequestDTO;
 import com.example.internshipprogram.DTO.AccountResponseDTO;
 import com.example.internshipprogram.Entity.Card;
 import com.example.internshipprogram.Entity.Account;
+import com.example.internshipprogram.enums.Status;
 
 import java.util.UUID;
 
@@ -19,7 +20,8 @@ public class CardAccountMapper {
         CardAccount cardAccount = new CardAccount();
         cardAccount.setId(UUID.randomUUID()); // Generate a new UUID for CardAccount
         cardAccount.setCard(card); // Set the Card entity
-        cardAccount.setAccount(account); // Set the Account entity
+        cardAccount.setAccount(account);// Set the Account entity
+        cardAccount.setStatus(Status.ACTIVE);
         return cardAccount;
     }
 

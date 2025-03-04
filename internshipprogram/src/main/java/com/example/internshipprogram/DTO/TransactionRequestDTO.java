@@ -14,6 +14,5 @@ public class TransactionRequestDTO {
         private BigDecimal transactionAmount;
         private String transactionType;
         private Timestamp transactionDate;
-        private UUID transactionId;
         private Currency currency;
     }
